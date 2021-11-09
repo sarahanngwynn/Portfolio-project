@@ -64,7 +64,17 @@ p {
 .project-description {
   padding: 120px 60px;
 }
+.about-section {
+  padding: 160px 20px;
+}
+.about-section-content {
+  margin: 30px;
+}
 @media (max-width: 900px) {
+  .about-section {
+    text-align: center;
+    margin: 0;
+  }
   h1 {
     font-size: 44px;
     line-height: 1.5;
@@ -79,4 +89,15 @@ p {
   .hero {
     padding: 80px 20px;
   }
+}
+.about-heading {
+  font-size: 64px;
+  line-height: 80px;
+  margin-top: 0;
+}
+.about-subheading {
+  font-size: 18px;
+  font-family: var(--default-font-family);
+  text-align: left;
+  font-weight: bold;
 }
