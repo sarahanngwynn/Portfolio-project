@@ -1,103 +1,121 @@
 :root {
   --branding-color: #6c63ff;
+  --secondary-color: #f9f7fe;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
-  --secondary-color: #272142;
 }
+
 body {
-  font-family: var(default-font-family);
+  font-family: var(--default-font-family);
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+  color: black;
   font-family: var(--heading-font-family);
   font-weight: bold;
 }
+
 h1 {
   font-size: 96px;
+  line-height: 1.5;
 }
+
 h2 {
-  text-align: center;
   font-size: 64px;
 }
+
 p {
   font-weight: normal;
   font-size: 16px;
+  line-height: 30px;
 }
-.hero h2 {
-  font-family: var(--default-font-family);
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 2;
-}
-.hero p {
-  font-weight: bold;
-  font-size: 36px;
-  margin: 0;
-  color: var(--secondary-color);
-}
+
 .hero {
-  background: #f9f7fe;
+  background: var(--secondary-color);
   text-align: center;
   padding: 160px 20px;
 }
-.btn-branding {
-  font-size: 18px;
-  border-radius: 4px;
-  color: white;
-  background: var(--branding-color);
-  line-height: 27px;
-  padding: 15px 30px;
+
+.hero p {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  color: #272142;
 }
-.btn-branding-outline {
-  font-size: 18px;
-  border: 1px solid var(--branding-color);
-  border-radius: 4px;
-  color: var(--branding-color);
-  background: white;
-  line-height: 27px;
-  padding: 15px 30px;
+
+.hero h2 {
+  font-family: var(--heading-font-family);
+  font-weight: normal;
+  line-height: 1.5;
+  font-size: 24px;
 }
-.project-description {
-  padding: 120px 60px;
-}
+
 .about-section {
   padding: 160px 20px;
 }
+
+.about-section h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.about-section h2 {
+  font-size: 18px;
+  font-family: var(--default-font-family);
+}
+
 .about-section-content {
   margin: 30px;
 }
+
+.btn-branding {
+  background: var(--branding-color);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.btn-branding-outline {
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.project-desciption {
+  padding: 120px 60px;
+}
+
 @media (max-width: 900px) {
-  .about-section {
-    text-align: center;
-    margin: 0;
-  }
   h1 {
     font-size: 44px;
-    line-height: 1.5;
+    line-height: 56px;
   }
+
   h2 {
     font-size: 44px;
   }
-  .project-description {
-    padding: 0;
-    text-align: center;
-  }
+
   .hero {
     padding: 80px 20px;
   }
-}
-.about-heading {
-  font-size: 64px;
-  line-height: 80px;
-  margin-top: 0;
-}
-.about-subheading {
-  font-size: 18px;
-  font-family: var(--default-font-family);
-  text-align: left;
-  font-weight: bold;
+
+  .about-section {
+    text-align: center;
+    padding: 0;
+  }
+
+  .project-desciption {
+    padding: 0;
+    text-align: center;
+  }
 }
